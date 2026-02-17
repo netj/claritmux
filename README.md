@@ -29,6 +29,7 @@ All `@claritmux_*` variables use `-o` (only-if-not-set), so you can override any
 ### Colors
 
 ```tmux
+set -g @plugin 'netj/claritmux'
 # Set any of these before TPM loads to override defaults
 set -g @claritmux_color_bg           '#1e1e2e'
 set -g @claritmux_color_fg           '#9399b2'
@@ -49,6 +50,8 @@ set -g @claritmux_color_host         '#585b70'
 ### With catppuccin/tmux
 
 ```tmux
+set -g @plugin 'netj/claritmux'
+set -g @plugin 'catppuccin/tmux'
 # Override claritmux colors with catppuccin theme variables
 set -gF @claritmux_color_bg           '#{@thm_bg}'
 set -gF @claritmux_color_fg           '#{@thm_overlay_2}'
@@ -64,7 +67,6 @@ set -gF @claritmux_color_day          '#{@thm_peach}'
 set -gF @claritmux_color_time         '#{@thm_red}'
 set -gF @claritmux_color_timezone     '#{@thm_surface_1}'
 set -gF @claritmux_color_host         '#{@thm_surface_2}'
-set -g @plugin 'netj/claritmux'
 ```
 
 ### Styles and formats
