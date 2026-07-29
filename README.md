@@ -24,7 +24,7 @@ Then press `prefix + I` to install via TPM.
 
 ## Customization
 
-All `@claritmux_*` variables use `-o` (only-if-not-set), so you can override any of them anywhere before TPM loads (i.e., before the `run '...tpm'` line in your `.tmux.conf`).
+Override any `@claritmux_*` variable anywhere before TPM loads (i.e., before the `run '...tpm'` line in your `.tmux.conf`). Your value is kept; only untouched defaults are refreshed when the config is re-sourced, so reloading with `prefix + R` picks up theme updates without clobbering your customizations.
 
 ### Colors
 
@@ -40,6 +40,7 @@ set -g @claritmux_color_bell         '#f38ba8'
 set -g @claritmux_color_prefix       '#89dceb'
 set -g @claritmux_color_session      '#585b70'
 set -g @claritmux_color_path         '#89b4fa'
+set -g @claritmux_color_message      '#f8a06a'
 set -g @claritmux_color_date         '#f9e2af'
 set -g @claritmux_color_day          '#fab387'
 set -g @claritmux_color_time         '#f38ba8'
@@ -62,6 +63,7 @@ set -gF @claritmux_color_bell         '#{@thm_red}'
 set -gF @claritmux_color_prefix       '#{@thm_sky}'
 set -gF @claritmux_color_session      '#{@thm_surface_2}'
 set -gF @claritmux_color_path         '#{@thm_blue}'
+set -gF @claritmux_color_message      '#{@thm_peach}'
 set -gF @claritmux_color_date         '#{@thm_yellow}'
 set -gF @claritmux_color_day          '#{@thm_peach}'
 set -gF @claritmux_color_time         '#{@thm_red}'
